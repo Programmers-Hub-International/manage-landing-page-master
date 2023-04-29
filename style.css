@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/images/bg-tablet-pattern.svg);
+    background-size: 50%;
+    margin: 0px;
+}
+#header{
+    height: 100px;
+    margin: 50px;
+}
+nav ul{
+margin: 6px;
+padding: 5px 0px 5px 30px;    
+}
+nav li{
+    display: inline;
+    color: hsl(228, 39%, 23%);
+    margin-right: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn-one{
+    color: white;
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+    margin-left: 110px;
+    box-shadow: 2px 3px;
+}
+.box-one{
+    width: 200px;
+    height: 200px;
+    margin: 60px;
+}
+.main{
+    font-weight: 700px;
+    color: hsl(233, 12%, 13%);
+    
+}
