@@ -1,45 +1,95 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url(/images/bg-tablet-pattern.svg);
-    background-size: 50%;
-    margin: 0px;
+/* CSS Variables */
+:root {
+  /* Primary Colors */
+  --bright-red: hsl(12, 88%, 59%);
+  --dark-blue: hsl(228, 39%, 23%);
+
+  /* Neutral Colors */
+
+  --dark-gray-blue: hsl(227, 12%, 61%);
+  --very-dark-blue: hsl(233, 12%, 13%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
 }
-#header{
-    height: 100px;
-    margin: 50px;
+
+body {
+  /* background-image: url(/images/bg-tablet-pattern.svg); */
+  background-size: 50%;
+  margin: 0px;
 }
-nav ul{
-margin: 6px;
-padding: 5px 0px 5px 30px;    
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  justify-content: space-around;
+  align-items: center;
 }
-nav li{
-    display: inline;
-    color: hsl(228, 39%, 23%);
-    margin-right: 60px;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
-.btn-one{
-    color: white;
-    background-color: hsl(12, 88%, 59%);
-    border-radius: 25px;
-    width: 120px;
-    height: 40px;
-    margin-left: 110px;
-    box-shadow: 2px 3px;
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-size: .9rem;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
-.box-one{
-    width: 200px;
-    height: 200px;
-    margin: 60px;
+
+/* Button */
+.btn{
+    width: 8rem;
+    padding: .8rem 0;
+    cursor: pointer;
+    background: var(--bright-red);
+    outline: none;
+    font-family: "Be Vietnam Pro", sans-serif;
+    border: none;
+    border-radius: 1.5rem;
+    color: var( --very-light-gray);
+    /* box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
+    -webkit-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
+  -moz-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99); */
 }
-.main{
-    font-weight: 700px;
-    color: hsl(233, 12%, 13%);
-    
+
+/* First Section Styles */
+.first-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  padding: 0 4rem;
+}
+
+.box-left h1{
+  font-size: 2.7rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.box-left p{
+  color: var(--dark-gray-blue);
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.box-right{
+  width: 45%;
+}
+
+.box-right img{
+  width: 100%;
 }
