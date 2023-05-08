@@ -70,7 +70,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 1.5rem 0;
-  padding: 0 4rem;
+  padding: 0 5rem;
 }
 
 .box-left h1{
@@ -93,3 +93,73 @@ nav {
 .box-right img{
   width: 100%;
 }
+
+
+/* Manage section styling */
+section#manage{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3em;
+  margin: 5rem 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+section#manage > div{
+  width: 45%;
+}
+
+.sub_manage_desc {
+  /* border: 2px solid; */
+  padding: 0 2em;
+}
+
+.sub_manage_desc h1{
+  margin: 0 0 1em 0;
+  font-size: 2rem;
+  color: var(--dark-blue);
+}
+
+.sub_manage_desc p{
+  margin-right: 5rem;
+  font-size: 1rem;
+  color: var(--dark-gray-blue);
+}
+
+.sub_manage_list__item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.sub_manage_list__item .individual__sub_manage_list__item:nth-child(1) {
+  /* border: 2px solid; */
+  margin-right: 1.5em;
+}
+
+.sub_manage_list__item .individual__sub_manage_list__item:nth-child(1) button {
+  width: 3.5em;
+  border-radius: 20px;
+  height: 2em;
+  background-color: var(--bright-red);
+  color: white;
+  border: 0;
+}
+
+.sub_manage_list__item .individual__sub_manage_list__item:nth-child(2) {
+  /* border: 2px solid; */
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-top: .2rem;
+}
+
+.sub_manage_list__item .individual__sub_manage_list__item:nth-child(2) h2 {
+  font-size:  1rem;
+  color: var(--dark-blue);
+  margin-bottom: 1em;
+}
+
+.sub_manage_list__item .individual__sub_manage_list__item:nth-child(2) p {
+  color: var(--dark-gray-blue);
+  margin-right: 3em;
+}
+/* Manage section styling ends */
