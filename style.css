@@ -212,4 +212,14 @@ section#testimonials h1{
 .customer p{
   color: var(--dark-gray-blue);
 }
+
+section#testimonials button{
+  margin-top: 3em;
+  background-color: var(--bright-red);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: .7em 1.7em;
+  cursor: pointer;
+}
 /* Testimonials styling starts ends */
