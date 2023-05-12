@@ -223,3 +223,43 @@ section#testimonials button{
   cursor: pointer;
 }
 /* Testimonials styling starts ends */
+
+/* Simplify section starts */
+section#simplify{
+  display: flex;
+  padding: 3em 5em;
+  background: var(--bright-red);
+  font-family: 'Be Vietnam Pro', sans-serif;
+  text-align: right;
+}
+
+section#simplify > div {
+  width: 50%;
+  /* border: 2px solid; */
+}
+
+.simp_child:nth-child(1) {
+  padding-right: 10em;
+}
+
+section#simplify h1{
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+section#simplify button{
+  background: #fff;
+  color: var(--bright-red);
+  border: none;
+  border-radius: 15px;
+  padding: .7em 1.7em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.simp_child:nth-child(2) {
+  margin: auto;
+}
+/* Simplify section ends */
