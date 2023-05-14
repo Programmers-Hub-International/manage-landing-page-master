@@ -20,10 +20,28 @@
 body {
   /* background-image: url(/images/bg-tablet-pattern.svg); */
   background-size: 50%;
-  margin: 0px;
 }
 
-/* Navigation Styling */
+
+/* Buttons styling */
+button:not(.manage_btn,#foot_btn){
+  width: 8rem;
+  padding: .8rem 0;
+  cursor: pointer;
+  background: var(--bright-red);
+  outline: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border: none;
+  border-radius: 1.5rem;
+  color: var( --very-light-gray);
+  /* box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
+  -webkit-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
+  -moz-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99); */
+}
+/* Buttons styling ends */
+
+
+/* Header styling starts */
 nav {
   display: flex;
   margin: 1rem 0;
@@ -46,22 +64,8 @@ nav {
   font-size: .9rem;
   font-family: "Be Vietnam Pro", sans-serif;
 }
+/* Header styling starts */
 
-/* Button */
-.btn{
-    width: 8rem;
-    padding: .8rem 0;
-    cursor: pointer;
-    background: var(--bright-red);
-    outline: none;
-    font-family: "Be Vietnam Pro", sans-serif;
-    border: none;
-    border-radius: 1.5rem;
-    color: var( --very-light-gray);
-    /* box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
-    -webkit-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
-  -moz-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99); */
-}
 
 /* First Section Styles */
 .first-section{
@@ -92,6 +96,7 @@ nav {
 .box-right img{
   width: 100%;
 }
+/* First Section Styles ends */
 
 
 /* Manage section styling */
@@ -215,12 +220,12 @@ section#testimonials h1{
 
 section#testimonials button{
   margin-top: 3em;
-  background-color: var(--bright-red);
+  /* background-color: var(--bright-red);
   color: #fff;
   border: none;
   border-radius: 15px;
   padding: .7em 1.7em;
-  cursor: pointer;
+  cursor: pointer; */
 }
 /* Testimonials styling starts ends */
 
@@ -253,11 +258,11 @@ section#simplify h1{
 section#simplify button{
   background: #fff;
   color: var(--bright-red);
-  border: none;
+  /* border: none;
   border-radius: 15px;
   padding: .7em 1.7em;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: bold; */
 }
 
 .simp_child:nth-child(2) {
