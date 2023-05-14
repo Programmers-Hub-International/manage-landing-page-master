@@ -187,6 +187,7 @@ section#testimonials h1{
   display: flex;
   justify-content: space-between;
   gap: 1em;
+  margin-bottom: 3em;
 }
 
 .customer{
@@ -200,7 +201,7 @@ section#testimonials h1{
   width: 100%;
   transform: translate(-50%, 20%);
   left: 50%;
-  top: -22%;
+  top: -45px;
 }
 
 .img_container img{
@@ -216,16 +217,6 @@ section#testimonials h1{
 
 .customer p{
   color: var(--dark-gray-blue);
-}
-
-section#testimonials button{
-  margin-top: 3em;
-  /* background-color: var(--bright-red);
-  color: #fff;
-  border: none;
-  border-radius: 15px;
-  padding: .7em 1.7em;
-  cursor: pointer; */
 }
 /* Testimonials styling starts ends */
 
@@ -258,11 +249,6 @@ section#simplify h1{
 section#simplify button{
   background: #fff;
   color: var(--bright-red);
-  /* border: none;
-  border-radius: 15px;
-  padding: .7em 1.7em;
-  cursor: pointer;
-  font-weight: bold; */
 }
 
 .simp_child:nth-child(2) {
@@ -283,12 +269,6 @@ footer{
 
 /* .foot_child{
   border: 2px solid;
-} */
-
-/* .foot_child{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 } */
 
 .foot_child:not(.foot_child:nth-child(3)){
