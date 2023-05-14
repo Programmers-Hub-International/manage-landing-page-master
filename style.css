@@ -34,9 +34,6 @@ button:not(.manage_btn,#foot_btn){
   border: none;
   border-radius: 1.5rem;
   color: var( --very-light-gray);
-  /* box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
-  -webkit-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99);
-  -moz-box-shadow: 20px 8px 25px 7px rgba(0,0,0,0.99); */
 }
 /* Buttons styling ends */
 
@@ -113,7 +110,6 @@ section#manage > div{
 }
 
 .manage_desc {
-  /* border: 2px solid; */
   padding: 0 2em;
 }
 
@@ -137,7 +133,6 @@ section#manage > div{
 }
 
 .sub_manage_item > div:nth-child(1) {
-  /* border: 2px solid; */
   margin-right: 1.5em;
 }
 
@@ -151,7 +146,6 @@ section#manage > div{
 }
 
 .sub_manage_item > div:nth-child(2) {
-  /* border: 2px solid; */
   font-family: 'Be Vietnam Pro', sans-serif;
   margin-top: .2rem;
 }
@@ -232,7 +226,6 @@ section#simplify{
 
 section#simplify > div {
   width: 50%;
-  /* border: 2px solid; */
 }
 
 .simp_child:nth-child(1) {
@@ -266,10 +259,6 @@ footer{
   color: #fff;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-
-/* .foot_child{
-  border: 2px solid;
-} */
 
 .foot_child:not(.foot_child:nth-child(3)){
   display: flex;
