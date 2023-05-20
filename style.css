@@ -316,3 +316,27 @@ footer ul li a{
   font-weight: lighter;
 }
 /* Footer styling starts */
+
+/* Mobile View*/
+/* Mobile Styles */
+@media (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+}
