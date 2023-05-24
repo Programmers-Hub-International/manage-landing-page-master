@@ -323,3 +323,75 @@ footer ul li a {
   font-weight: lighter;
 }
 /* Footer styling starts */
+
+/* media query declaration */
+/* please just put your code where necessary to avoid multiple media query declarations */
+@media (max-width: 52em) {
+  /* header section */
+
+  /* hero section */
+
+  /* about section */
+
+  /* testimonial section */
+
+  /* cta section */
+  /* generally try to use classes and not ids for styling to avoid running into specificity issues */
+  #simplify {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2.5em;
+    padding: 3em 0 !important;
+  }
+
+  #simplify > div,
+  #simplify > div h1 {
+    width: 100% !important;
+    text-align: center;
+    padding: 0;
+  }
+
+  /* footer section */
+  footer {
+    flex-direction: column-reverse;
+    padding-inline: 3em;
+    position: relative;
+  }
+
+  .newsletter > :first-child {
+    flex: 0.8;
+  }
+
+  .newsletter > :last-child {
+    flex: 0.1;
+  }
+
+  footer p {
+    position: absolute;
+    bottom: 2.5em;
+    left: 50%;
+    translate: -50% 0;
+  }
+
+  .foot_child {
+    height: max-content !important;
+    margin-bottom: 2em;
+  }
+
+  .foot_child:nth-child(2),
+  .foot_child:nth-child(3) {
+    text-align: center;
+    gap: 1.5em !important;
+  }
+  
+  .foot_icons {
+    width: 50%;
+    margin-inline: auto;
+  }
+
+  .foot_img {
+    margin-inline: auto;
+    margin-bottom: 1.5em;
+  }
+}
