@@ -22,21 +22,33 @@ body {
   background-size: 50%;
 }
 
-
 /* Buttons styling */
-button:not(.manage_btn,#foot_btn){
+button:not(.manage_btn, #foot_btn) {
   width: 8rem;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   cursor: pointer;
   background: var(--bright-red);
   outline: none;
   font-family: "Be Vietnam Pro", sans-serif;
   border: none;
   border-radius: 1.5rem;
-  color: var( --very-light-gray);
+  color: var(--very-light-gray);
 }
 /* Buttons styling ends */
 
+/* to add a little pizazz on hover and focus*/
+button:is(:hover, :focus-visible) {
+  background-color: var(--dark-blue) !important;
+}
+
+.simp_child > button:is(:hover, :focus-visible) {
+  background-color: var(--bright-red) !important;
+  color: var(--very-light-gray) !important;
+}
+
+a:is(:hover, :focus-visible) {
+  font-weight: bold;
+}
 
 /* Header styling starts */
 nav {
@@ -58,14 +70,13 @@ nav {
   margin: 0 1rem;
   text-decoration: none;
   color: var(--dark-blue);
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-family: "Be Vietnam Pro", sans-serif;
 }
 /* Header styling starts */
 
-
 /* First Section Styles */
-.first-section{
+.first-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,39 +84,38 @@ nav {
   padding: 0 5rem;
 }
 
-.box-left h1{
+.box-left h1 {
   font-size: 2.7rem;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   margin-bottom: 1.5rem;
   line-height: 2.8rem;
 }
 
-.box-left p{
+.box-left p {
   color: var(--dark-gray-blue);
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   margin-bottom: 2rem;
 }
 
-.box-right{
+.box-right {
   width: 45%;
 }
 
-.box-right img{
+.box-right img {
   width: 100%;
 }
 /* First Section Styles ends */
 
-
 /* Manage section styling */
-section#manage{
+section#manage {
   display: flex;
   justify-content: space-between;
   padding: 0 3em;
   margin: 5rem 0;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
-section#manage > div{
+section#manage > div {
   width: 45%;
 }
 
@@ -113,23 +123,23 @@ section#manage > div{
   padding: 0 2em;
 }
 
-.manage_desc h1{
+.manage_desc h1 {
   margin: 0 0 1em 0;
   font-size: 2rem;
   color: var(--dark-blue);
 }
 
-.manage_desc p{
+.manage_desc p {
   margin-right: 5rem;
   font-size: 1rem;
   color: var(--dark-gray-blue);
 }
 
-.sub_manage_item{
+.sub_manage_item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2em;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .sub_manage_item > div:nth-child(1) {
@@ -146,12 +156,12 @@ section#manage > div{
 }
 
 .sub_manage_item > div:nth-child(2) {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  margin-top: .2rem;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-top: 0.2rem;
 }
 
 .sub_manage_item > div:nth-child(2) h2 {
-  font-size:  1rem;
+  font-size: 1rem;
   color: var(--dark-blue);
   margin-bottom: 1em;
 }
@@ -162,35 +172,34 @@ section#manage > div{
 }
 /* Manage section styling ends */
 
-
 /* Testimonials styling starts */
-section#testimonials{
+section#testimonials {
   text-align: center;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   /* padding: 0 3em; */
   margin: 5rem 0;
 }
 
-section#testimonials h1{
+section#testimonials h1 {
   margin: 0 0 3em 0;
   font-size: 2rem;
   color: var(--dark-blue);
 }
 
-#customers_container{
+#customers_container {
   display: flex;
   justify-content: space-between;
   gap: 1em;
   margin-bottom: 3em;
 }
 
-.customer{
+.customer {
   background-color: var(--very-light-gray);
   padding: 1.5em;
   position: relative;
 }
 
-.img_container{
+.img_container {
   position: absolute;
   width: 100%;
   transform: translate(-50%, 20%);
@@ -198,29 +207,28 @@ section#testimonials h1{
   top: -45px;
 }
 
-.img_container img{
+.img_container img {
   width: 4em;
   height: 4em;
 }
 
-.customer h2{
+.customer h2 {
   color: var(--dark-blue);
   font-size: 1rem;
   margin: 2em 0 1em 0;
 }
 
-.customer p{
+.customer p {
   color: var(--dark-gray-blue);
 }
 /* Testimonials styling starts ends */
 
-
 /* Simplify section starts */
-section#simplify{
+section#simplify {
   display: flex;
   padding: 3em 5em;
   background: var(--bright-red);
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   text-align: right;
 }
 
@@ -232,14 +240,14 @@ section#simplify > div {
   padding-right: 10em;
 }
 
-section#simplify h1{
+section#simplify h1 {
   font-size: 2rem;
   color: #fff;
   text-align: left;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
-section#simplify button{
+section#simplify button {
   background: #fff;
   color: var(--bright-red);
 }
@@ -249,70 +257,141 @@ section#simplify button{
 }
 /* Simplify section ends */
 
-
 /* Footer styling starts */
-footer{
+footer {
   background-color: var(--very-dark-blue);
   display: flex;
   justify-content: space-between;
   padding: 3em 5em;
   color: #fff;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.foot_child:not(.foot_child:nth-child(3)){
+.foot_child:not(.foot_child:nth-child(3)) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 8rem;
 }
 
-.foot_child:nth-child(3) li + li{
+.foot_child:nth-child(3) li + li {
   margin-top: 1.1em;
 }
 
-.foot_icons{
+.foot_icons {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-footer ul{
+footer ul {
   list-style: none;
 }
 
-footer ul li a{
+footer ul li a {
   color: white;
   text-decoration: none;
 }
 
-.newsletter{
+.newsletter {
   display: flex;
   justify-content: space-between;
-  gap: .4em;
+  gap: 0.4em;
 }
 
-.newsletter input{
+.newsletter input {
   background-color: #fff;
   border: none;
   border-radius: 15px;
-  padding: .8em 1em;
+  padding: 0.8em 1em;
   outline: none;
 }
 
-.newsletter button{
+.newsletter button {
   background: var(--bright-red);
   color: #fff;
-  padding: .8em 1.3em;
+  padding: 0.8em 1.3em;
   border: none;
   border-radius: 15px;
   cursor: pointer;
 }
 
-.foot_child:nth-child(4) p{
-  font-size: .7rem;
+.foot_child:nth-child(4) p {
+  font-size: 0.7rem;
   color: grey;
   text-align: right;
   font-weight: lighter;
 }
 /* Footer styling starts */
+
+/* media query declaration */
+/* please just put your code where necessary to avoid multiple media query declarations */
+@media (max-width: 52em) {
+  /* header section */
+
+  /* hero section */
+
+  /* about section */
+
+  /* testimonial section */
+
+  /* cta section */
+  /* generally try to use classes and not ids for styling to avoid running into specificity issues */
+  #simplify {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2.5em;
+    padding: 3em 0 !important;
+  }
+
+  #simplify > div,
+  #simplify > div h1 {
+    width: 100% !important;
+    text-align: center;
+    padding: 0;
+  }
+
+  /* footer section */
+  footer {
+    flex-direction: column-reverse;
+    padding-inline: 3em;
+    position: relative;
+  }
+
+  .newsletter > :first-child {
+    flex: 0.8;
+  }
+
+  .newsletter > :last-child {
+    flex: 0.1;
+  }
+
+  footer p {
+    position: absolute;
+    bottom: 2.5em;
+    left: 50%;
+    translate: -50% 0;
+  }
+
+  .foot_child {
+    height: max-content !important;
+    margin-bottom: 2em;
+  }
+
+  .foot_child:nth-child(2),
+  .foot_child:nth-child(3) {
+    text-align: center;
+    gap: 1.5em !important;
+  }
+  
+  .foot_icons {
+    width: 50%;
+    margin-inline: auto;
+  }
+
+  .foot_img {
+    margin-inline: auto;
+    margin-bottom: 1.5em;
+  }
+}
